@@ -86,11 +86,7 @@ router.post('/login', (req, res, next) => {
 
 
 router.get('/verify', isAuthenticated, (req, res, next) => {
-
-    setTimeout(() => {
-        res.status(200).json(req.payload);
-    }, 1000)
-
+    res.status(200).json(req.payload);
 });
 
 module.exports = router;
