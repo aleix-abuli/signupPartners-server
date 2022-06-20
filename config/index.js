@@ -8,8 +8,9 @@ module.exports = (app) => {
 
   app.use(
     cors({
-      credentials: true,
-      origin: '*',
+        origin: '*',
+        credentials: true,
+        optionSuccessStatus:200,
     })
   );
 
