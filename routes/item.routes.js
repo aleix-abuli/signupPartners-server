@@ -33,7 +33,7 @@ router
 
     Item
     .findByIdAndDelete(itemId)
-    .then((__) => console.log('deleted item'))
+    .then((__) => res.status(201).json())
     .catch((err) => console.log(err));
 
 });

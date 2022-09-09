@@ -52,7 +52,7 @@ router
 
     Store
     .findByIdAndDelete(storeId)
-    .then((__) => console.log('store deleted'))
+    .then((__) => res.status(201).json())
     .catch((err) => console.log(err));
 
 });
